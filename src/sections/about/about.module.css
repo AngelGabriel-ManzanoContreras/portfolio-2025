@@ -8,7 +8,7 @@
   gap: var(--page-gap);
 }
 
-.about--article {
+.about__article {
   width: 50%;
   padding: 2rem;
   gap: 3rem;
@@ -16,15 +16,15 @@
   flex-direction: column;
 }
 
-.about--title {
+.about__title {
   font-size: var(--main-title-size);
 }
 
-.about--description {
+.about__description {
   font-size: var(--section-text-size);
 }
 
-.about--image {
+.about__image {
   position: relative;
   width: 50%;
   display: flex;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.about--image img {
+.about__image img {
   border-radius: 50px;
   z-index: -1;
 }

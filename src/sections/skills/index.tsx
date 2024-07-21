@@ -12,8 +12,8 @@ export default function Skills() {
 
   const categoryStyleHandler = ( inputCategory: string ) => {
     return [
-      styles[`skills-section--category`],
-      category === inputCategory ? styles[`skills-section--category__selected`] : ''
+      styles[`skills-section__category`],
+      category === inputCategory ? styles[`skills-section__category--selected`] : ''
     ].join(' ');
   }
 
@@ -30,9 +30,9 @@ export default function Skills() {
 
   return (
     <section className={ styles[`skills-section`] }>
-      <h2 className={ styles[`skills-section--title`] }>Skills</h2>
+      <h2 className={ styles[`skills-section__title`] }>Skills</h2>
 
-      <section className={ styles[`skills-section--categories`] }>
+      <section className={ styles[`skills-section__categories`] }>
         <span 
           className={ categoryStyleHandler('technical') }
           onClick={ () => handleCategory('technical') }
@@ -43,7 +43,7 @@ export default function Skills() {
           >Professional</span>
       </section>
 
-      <section className={ styles[`skills-section--skill-list`] }>
+      <section className={ styles[`skills-section__skill-list`] }>
         { skillsToDisplay.map( ( skill, index ) => ( <Skill key={ index } { ...skill}/> ) )
         }
       </section>
