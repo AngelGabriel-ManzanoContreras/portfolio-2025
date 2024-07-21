@@ -1,0 +1,38 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--page-padding);
+  gap: var(--page-gap);
+}
+
+.about--article {
+  width: 50%;
+  padding: 2rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about--title {
+  font-size: var(--main-title-size);
+}
+
+.about--description {
+  font-size: var(--section-text-size);
+}
+
+.about--image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about--image img {
+  border-radius: 50px;
+  z-index: -1;
+}

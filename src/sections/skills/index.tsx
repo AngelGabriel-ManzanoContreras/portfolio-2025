@@ -1,10 +1,14 @@
 'use client'
 import { useState } from 'react'
 
+import { skills } from '@/src/data/data'
+
 import styles from './skills.module.css'
+import Skill from '@/src/components/skill'
 
 export default function Skills() {
   const [category, setCategory] = useState('');
+  const [ skillsToDisplay, setSkillsToDisplay ] = useState( skills );
 
   const categoryStyleHandler = ( inputCategory: string ) => {
     return [
@@ -17,8 +21,10 @@ export default function Skills() {
     if ( category === inputCategory ) {
       // Clear the category if it's already set
       setCategory( '' );
+      setSkillsToDisplay( skills );
     } else {
       setCategory( inputCategory );
+      setSkillsToDisplay( skills.filter( skill => skill.category === inputCategory ) );
     }
   }
 
@@ -28,16 +34,18 @@ export default function Skills() {
 
       <section className={ styles[`skills-section--categories`] }>
         <span 
-          className={ categoryStyleHandler('Technical') }
-          onClick={ () => handleCategory('Technical') }
+          className={ categoryStyleHandler('technical') }
+          onClick={ () => handleCategory('technical') }
           >Technical</span>
         <span 
-          className={ categoryStyleHandler('Soft') }
-          onClick={ () => handleCategory('Soft') }
-          >Soft</span>
+          className={ categoryStyleHandler('professional') }
+          onClick={ () => handleCategory('professional') }
+          >Professional</span>
       </section>
 
       <section className={ styles[`skills-section--skill-list`] }>
+        { skillsToDisplay.map( ( skill, index ) => ( <Skill key={ index } { ...skill}/> ) )
+        }
       </section>
     </section>
   )
