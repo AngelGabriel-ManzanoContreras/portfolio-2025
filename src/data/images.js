@@ -19,15 +19,15 @@ import golang from '@/assets/icons/golang_dark.svg'
 
 import slack from '@/assets/icons/slack.svg'
 
-import adaptability from '@/assets/icons/adaptability.png'
-import communication from '@/assets/icons/communication.png'
-import creativity from '@/assets/icons/creativity.png'
+import adaptability from '@/assets/icons/adaptability.webp'
+import communication from '@/assets/icons/communication.webp'
+import creativity from '@/assets/icons/creativity.webp'
 import criticalThinking from '@/assets/icons/critical-thinking.webp'
-import empathy from '@/assets/icons/empathy.png'
+import empathy from '@/assets/icons/empathy.webp'
 import pragmatism from '@/assets/icons/pragmatism.webp'
 import problemSolving from '@/assets/icons/problem-solving.webp'
 import teamwork from '@/assets/icons/teamwork.webp'
-import timeManagement from '@/assets/icons/time-management.png'
+import timeManagement from '@/assets/icons/time-management.webp'
 
 //littleSites
 import littlesites1 from '@/assets/imgs/projects/littlesites/littlesites-landing.jpg'
