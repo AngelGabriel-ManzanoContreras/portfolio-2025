@@ -132,6 +132,21 @@ export const skills = [
   }
 ];
 
+export const experience = [
+  {
+    title: 'Internship Trainee',
+    company: 'IBM - Technology Campus Guadalajara',
+    companyImg: externalImages.ibm,
+    ubication: 'Guadalajara, Jalisco, Mexico',
+    duration: 'March 2024 - April 2024 (2 months)',
+    description: `• Developed user interfaces with React.js and CSS3, ensuring seamless user experiences.
+• Collaborated closely with backend developers in designing and developing the system's API using Node.js and Express.js.
+• Participated in problem-solving, requirements gathering, definition, and design of new application features.
+• Cultivated an inclusive environment aimed at fostering skill development and ensuring project success. 
+• Partnered with QA and project leads to identify usability and technology issues, actively contributing to their resolution.`
+  }
+]
+
 export const education = [
   {
     cert: 'Higher university technician in computer systems',

@@ -18,6 +18,7 @@ import java from '@/assets/icons/java.svg'
 import golang from '@/assets/icons/golang_dark.svg'
 
 import slack from '@/assets/icons/slack.svg'
+import ibm from '@/assets/icons/ibm.svg'
 
 import adaptability from '@/assets/icons/adaptability.webp'
 import communication from '@/assets/icons/communication.webp'
@@ -102,6 +103,7 @@ export const makhaiImages = [
 ]
 
 export const externalImages = {
+    ibm,
     ptech,
     udeg,
     google_pm,
