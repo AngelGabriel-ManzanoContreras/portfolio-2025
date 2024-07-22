@@ -136,86 +136,115 @@ export const experience = [
   {
     title: 'Internship Trainee',
     company: 'IBM - Technology Campus Guadalajara',
-    companyImg: externalImages.ibm,
+    image: externalImages.ibm,
     ubication: 'Guadalajara, Jalisco, Mexico',
     duration: 'March 2024 - April 2024 (2 months)',
-    description: `• Developed user interfaces with React.js and CSS3, ensuring seamless user experiences.
-• Collaborated closely with backend developers in designing and developing the system's API using Node.js and Express.js.
-• Participated in problem-solving, requirements gathering, definition, and design of new application features.
-• Cultivated an inclusive environment aimed at fostering skill development and ensuring project success. 
-• Partnered with QA and project leads to identify usability and technology issues, actively contributing to their resolution.`
+    description: ` • Developed user interfaces with React.js and CSS3, ensuring seamless user experiences.
+ • Collaborated closely with backend developers in designing and developing the system's API using Node.js and Express.js.
+ • Participated in problem-solving, requirements gathering, definition, and design of new application features.
+ • Cultivated an inclusive environment aimed at fostering skill development and ensuring project success. 
+ • Partnered with QA and project leads to identify usability and technology issues, actively contributing to their resolution.`
   }
 ]
 
 export const education = [
   {
-    cert: 'Higher university technician in computer systems',
-    org: 'PTECH - IBM - JA Worldwide',
-    current: true,
+    title: 'Higher university technician in computer systems',
+    company: 'PTECH - IBM - JA Worldwide',
     image: externalImages.ptech,
-    skills: [ 'Programming', 'Web Development', 'Networking', 'Project Management' ]
+    description: ` • Programming
+ • Web Development
+ • Networking
+ • Project Management`
   },
   {
-    cert: 'Professional Technologist in Computer Systems',
-    org: 'Escuela Politécnica de Guadalajara - UdeG',
+    title: 'Professional Technologist in Computer Systems',
+    company: 'Escuela Politécnica de Guadalajara - UdeG',
     image: externalImages.udeg,
-    skills: [ 'Programming', 'Web Development', 'Networking', 'Project Management' ]
+    description: ` • Programming
+ • Web Development
+ • Networking
+ • Project Management`
   },
   {
-    cert: 'Google Professional Certificate Project Management',
-    org: 'Google - Coursera',
+    title: 'Google Professional Certificate Project Management',
+    company: 'Google - Coursera',
     current: true,
     image: externalImages.google_pm,
-    skills: [ 'Project Management', 'Project Planning', 'Project Scheduling', 'Agile Project Management' ]
+    description: ` • Project Management
+ • Project Planning
+ • Project Scheduling
+ • Agile Project Management`
   },
   {
-    cert: 'Google Professional Certificate User Exeprience (UX) Design',
-    org: 'Google - Coursera',
+    title: 'Google Professional Certificate User Exeprience (UX) Design',
+    company: 'Google - Coursera',
     badge: 'https://coursera.org/verify/professional-cert/M7GX5AD5SDXU',
     image: externalImages.google_ux,
-    skills: [ 'User Experience', 'User Research', 'User-centered Design', 'User Interface Design' ]
+    description: ` • User Experience
+ • User Research
+ • User-centered Design
+ • User Interface Design`
   },
   {
-    cert: 'Git Essentials',
-    org: `O'Reilly Media`,
+    title: 'Git Essentials',
+    company: `O'Reilly Media`,
     badge: 'https://www.credly.com/badges/664a764c-55b8-4bbf-88e8-11c52838ad3b',
     image: externalImages.oreilly_git,
-    skills: [ 'Git', 'Github', 'Version Control', 'Software Collaboration' ]
+    description: ` • Git
+ • Github
+ • Version Control
+ • Software Collaboration`
   },
   {
-    cert: 'Artificial Intelligence Fundamentals',
-    org: 'IBM - SkillsBuild',
+    title: 'Artificial Intelligence Fundamentals',
+    company: 'IBM - SkillsBuild',
     badge: 'https://www.credly.com/badges/df7ecc00-e6cf-4e07-8f03-b2ab446d8309/public_url',
     image: externalImages.sks_ia,
-    skills: [ 'Artificial Intelligense', 'AI Applications', 'AI Capabilities', 'AI Ethics' ]
+    description: ` • Artificial Intelligense
+ • AI Applications
+ • AI Capabilities
+ • AI Ethics`
   },
   {
-    cert: 'Enterprise Design Thinking Practitioner',
-    org: 'IBM',
+    title: 'Enterprise Design Thinking Practitioner',
+    company: 'IBM',
     badge: 'https://www.credly.com/badges/779b1a70-904a-408f-8575-d10ccb154158/public_url',
     image: externalImages.designThinkingPractitioner,
-    skills: [ 'Experience Design', 'User-centered Design', 'User Experience', 'User Research' ]
+    description: ` • Enterprise Design Thinking
+ • User-centered Design
+ • User Experience
+ • User Research`
   },
   {
-    cert: 'CCNA: Introduction to Networks',
-    org: 'Cisco',
+    title: 'CCNA: Introduction to Networks',
+    company: 'Cisco',
     badge: 'https://www.credly.com/badges/8dcf4dc8-41e7-4b1f-896c-9926505509fe/public_url',
     image: externalImages.ccna_itn,
-    skills: [ 'Network Fundamentals', 'Ethernet', 'IPv4 and IPv6 Addressing', 'IP Connectivity' ]
+    description: ` • Network Fundamentals
+ • Ethernet
+ • IPv4 and IPv6 Addressing
+ • IP Connectivity`
   },
   {
-    cert: 'IBM Agile Explorer',
-    org: 'IBM - SkillsBuild',
+    title: 'IBM Agile Explorer',
+    company: 'IBM - SkillsBuild',
     badge: 'https://www.credly.com/badges/2c92f743-0d57-459a-95e3-c8e7fc44d974',
     image: externalImages.sks_agile,
-    skills: [ 'Agile Operations', 'Scrum methodology', 'Sprints', 'Iterations' ]
+    description: ` • Agile Operations
+ • Scrum methodology
+ • Sprints
+ • Iterations`
   },
   {
-    cert: 'Working in a Digital World',
-    org: 'IBM - SkillsBuild',
+    title: 'Working in a Digital World',
+    company: 'IBM - SkillsBuild',
     badge: 'https://www.credly.com/badges/fef651be-a916-46ad-a071-15e04a5a139b/public_url',
     image: externalImages.sks_workingInADigitalWorld,
-    skills: [ 'Creative and Critical Thinking', 'Interpersonal Communication', 'Problem Solving', 'Team Collaboration' ]
+    description: ` • Creative and Critical Thinking
+ • Interpersonal Communication
+ • Problem Solving
+ • Team Collaboration`
   }
 ]
 

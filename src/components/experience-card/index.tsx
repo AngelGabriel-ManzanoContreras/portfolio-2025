@@ -1,14 +1,17 @@
 import Image from 'next/image';
+
+import { IExperienceCard } from './Iexperience-card';
+
 import styles from './experience.module.css';
 
-export default function index({ title, duration, ubication, company, companyImg, description }) {
+export default function index({ title, duration, ubication, company, image, description, badge } : IExperienceCard) {
   return (
     <article className={ styles[`experience-card`] }>
       <section className={ styles[`experience-card__header`] }>
 
         <figure className={ styles[`experience-card__image`] }>
           <Image
-            src={ companyImg }
+            src={ image }
             alt={ company }
             width={ 150 }
             height={ 150 }
@@ -18,8 +21,8 @@ export default function index({ title, duration, ubication, company, companyImg,
         <section className={ styles[`experience-card__summary`] }>
           <h3 className={ styles[`experience-card__title`] }>{ title }</h3>
           <p className={ styles[`experience-card__company`] }>{ company }</p>
-          <p className={ styles[`experience-card__duration`] }>{ duration }</p>
-          <p className={ styles[`experience-card__ubication`] }>{ ubication }</p>
+          { duration && <p className={ styles[`experience-card__duration`] }>{ duration }</p> }
+          { ubication && <p className={ styles[`experience-card__ubication`] }>{ ubication }</p> }
         </section>
 
       </section>
@@ -27,6 +30,9 @@ export default function index({ title, duration, ubication, company, companyImg,
       <h4 className={ styles[`experience-card__description-title`] }>Description</h4>
 
       <pre className={ styles[`experience-card__description`]}>{ description }</pre>
+
+      { badge && <span className={ styles[`experience-card__badge`] }>{ badge }</span> }
+
     </article>
   )
 }

@@ -18,7 +18,7 @@ import java from '@/assets/icons/java.svg'
 import golang from '@/assets/icons/golang_dark.svg'
 
 import slack from '@/assets/icons/slack.svg'
-import ibm from '@/assets/icons/ibm.svg'
+import ibm from '@/assets/imgs/education/ibm.webp'
 
 import adaptability from '@/assets/icons/adaptability.webp'
 import communication from '@/assets/icons/communication.webp'
@@ -43,18 +43,18 @@ import makhai3 from '@/assets/imgs/projects/makhai/makhai-eventos.jpeg'
 import makhai4 from '@/assets/imgs/projects/makhai/makhai-gestion.jpeg'
 import makhai5 from '@/assets/imgs/projects/makhai/makhai-gestion2.jpeg'
 
-// External images
-const ptech = 'https://pbs.twimg.com/profile_images/1216830335687843845/VteYO_S9_400x400.jpg'
-const udeg = 'https://th.bing.com/th/id/R.f5fc81c37f06c10be4b9ea29063f0e54?rik=XQJSBXiuDLPGXA&riu=http%3a%2f%2fpolitecnica.sems.udg.mx%2frevista%2flineamientos%2fassets%2fimg%2ffind_user.png&ehk=oD5PoLZ%2bCeBYZevld7NDUXsgvh9q5Ic9NK1KoqwOhBo%3d&risl=&pid=ImgRaw&r=0'
-const google_pm = 'https://images.credly.com/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png'
-const google_ux = 'https://i0.wp.com/www.neverlandseeker.com/wp-content/uploads/2021/09/Google-UX-Design-Credly-Certificate.png'
-const sks_ia = 'https://images.credly.com/size/340x340/images/82b908e1-fdcd-4785-9d32-97f11ccbcf08/image.png'
-const designThinkingPractitioner = 'https://images.credly.com/size/340x340/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07_Practitioner.png'
-const sks_agile = 'https://images.credly.com/size/340x340/images/a972f054-be07-4845-85c7-95c8d11852f5/IBM-Agile-Explorer.png'
-const oreilly_git = 'https://images.credly.com/size/340x340/images/4a35c226-b5a6-49d9-b6e4-fe068a55ca36/798d4a2d-8269-483c-bd4b-85bf49473523.png'
-const sks_workingInADigitalWorld = 'https://images.credly.com/size/340x340/images/4f76c627-c180-49ae-a5a0-742885eef581/Working_in_a_Digital_World-_Professional_Skills.png'
-const ccna_itn = 'https://images.credly.com/size/340x340/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png'
-const cv_icon = 'https://cdn2.iconfinder.com/data/icons/human-resource-1/50/36-1024.png'
+// Education images
+import ptech from '@/assets/imgs/education/ptech.webp';
+import udeg from '@/assets/imgs/education/udeg.webp';
+import google_pm from '@/assets/imgs/education/google-project-management-certificate.webp';
+import google_ux from '@/assets/imgs/education/google-ux-certificate.webp';
+import sks_ia from '@/assets/imgs/education/skillsbuild--artificial-intelligence-fundamentals.webp';
+import designThinkingPractitioner from '@/assets/imgs/education/design-thinking-practitioner.webp';
+import sks_agile from '@/assets/imgs/education/ibm-agile-explorer.webp';
+import oreilly_git from '@/assets/imgs/education/oreilly-git-essentials.webp';
+import sks_workingInADigitalWorld from '@/assets/imgs/education/working-in-a-digital_world--professional-skills.webp';
+import ccna_itn from '@/assets/imgs/education/ccna-itn-1.webp';
+import cv_icon from '@/assets/icons/cv-icon.webp';
 
 export const icons = {
     linkedin,

@@ -13,10 +13,10 @@
   --container-shadow:
     0 -4px 4px 0 rgba(0, 0, 0, 0.25), /* Shadow at the outer top */
     0 4px 4px 0 rgba(0, 0, 0, 0.25);  /* Shadow at the outer bottom */
-  --container-gradient: linear-gradient(0deg, var(--fragment-color) , var(--container-color));
+  --container-gradient: linear-gradient(0deg, var(--container-color), var(--fragment-color));
 
   --page-padding: 4rem;
-  --page-gap: 1rem;
+  --page-gap: 2rem;
   --main-title-size: 4rem;
   --section-title-size: 3rem;
   --section-subtitle-size: 2rem;

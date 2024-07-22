@@ -1,0 +1,23 @@
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--page-padding);
+  gap: var(--page-gap);
+  background-image: var(--container-gradient);
+}
+
+.education__title {
+  font-size: var(--section-title-size);
+}
+
+.education__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--page-gap);
+}

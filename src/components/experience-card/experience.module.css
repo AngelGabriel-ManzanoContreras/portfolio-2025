@@ -1,6 +1,8 @@
 .experience-card {
   flex: 1;
-  width: 500;
+  flex-shrink: 0;
+  flex-basis: 350px;
+  width: 350px;
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -17,7 +19,6 @@
 }
 
 .experience-card__image {
-  background-color: var(--font-color);
   border-radius: .5rem;
 }
 
