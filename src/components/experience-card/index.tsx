@@ -1,10 +1,16 @@
+'use client';
 import Image from 'next/image';
 
 import { IExperienceCard } from './Iexperience-card';
 
 import styles from './experience.module.css';
+import MainButton from '@/src/components/main-button';
 
 export default function index({ title, duration, ubication, company, image, description, badge } : IExperienceCard) {
+  const goToCertificate = () => {
+    window.open(badge, '_blank');
+  }
+
   return (
     <article className={ styles[`experience-card`] }>
       <section className={ styles[`experience-card__header`] }>
@@ -31,7 +37,7 @@ export default function index({ title, duration, ubication, company, image, desc
 
       <pre className={ styles[`experience-card__description`]}>{ description }</pre>
 
-      { badge && <span className={ styles[`experience-card__badge`] }>{ badge }</span> }
+      { badge && <MainButton text='View certificate' onClick={ goToCertificate } /> }
 
     </article>
   )

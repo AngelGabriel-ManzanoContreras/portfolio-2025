@@ -4,6 +4,7 @@ import About from "@/src/sections/about";
 import Skills from "@/src/sections/skills";
 import Experience from "@/src/sections/experience";
 import Education from "@/src/sections/education";
+import Contact from "@/src/sections/contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Education />
+      <Contact />
     </main>
   );
 }

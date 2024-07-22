@@ -11,10 +11,10 @@ export default function index() {
       
       <section className={ styles[`education__list`] }>
         {
-          education.map((item, index) => ( 
+          education.map((cert, index) => ( 
             <ExperienceCard 
               key={ index } 
-              { ...item } 
+              { ...cert } 
             />) 
           )
         }

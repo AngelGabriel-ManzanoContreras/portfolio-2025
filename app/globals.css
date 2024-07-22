@@ -13,7 +13,7 @@
   --container-shadow:
     0 -4px 4px 0 rgba(0, 0, 0, 0.25), /* Shadow at the outer top */
     0 4px 4px 0 rgba(0, 0, 0, 0.25);  /* Shadow at the outer bottom */
-  --container-gradient: linear-gradient(0deg, var(--container-color), var(--fragment-color));
+  --container-gradient: linear-gradient(0deg, var(--section-container), var(--fragment-color));
 
   --page-padding: 4rem;
   --page-gap: 2rem;

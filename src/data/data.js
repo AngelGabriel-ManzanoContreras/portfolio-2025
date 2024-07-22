@@ -1,26 +1,25 @@
 import { icons, makhaiImages, littlesitesImages, externalImages } from './images.js'
-//import { pdfs } from './pdfs.js'
 
 export const profiles = [
   {
-    img: icons.linkedin,
+    image: icons.linkedin,
     name: 'LinkedIn - Angel Gabriel Manzano Contreras',
     link: 'https://www.linkedin.com/in/angel-gabriel-manzano-contreras/'
   },
   {
-    img: icons.gmail,
+    image: icons.gmail,
     name: 'Gmail - Angel Gabriel Manzano Contreras',
     link: 'mailto:amanzanocontreras@gmail.com'
   },
   {
-    img: icons.github,
+    image: icons.github,
     name: 'GitHub - Angel Gabriel Manzano Contreras',
     link: 'https://github.com/AngelGabriel-ManzanoContreras'
   },
   {
-    img: icons.cv_icon,
+    image: icons.cv_icon,
     name: 'CV - Angel Gabriel Manzano Contreras',
-    //link: pdfs.angelCV
+    link: 'https://drive.google.com/file/d/1xqqBi1ygOr7WoMKtD8umDhzPbmrTVOmT/view?usp=sharing'
   }
 ]
 

@@ -1,7 +1,7 @@
 .experience-card {
-  flex: 1;
   flex-shrink: 0;
   flex-basis: 350px;
+  flex-grow: 1;
   width: 350px;
   border-radius: 1rem;
   padding: 1rem;

@@ -1,0 +1,10 @@
+.main-button {
+  flex: 0;
+  width: fit-content;
+  background-color: var(--purple);
+  padding: 1rem 4rem;
+  font-size: var(--section-text-size);
+  color: var(--font-color);
+  border-radius: 1rem;
+  font-weight: bold;
+}
