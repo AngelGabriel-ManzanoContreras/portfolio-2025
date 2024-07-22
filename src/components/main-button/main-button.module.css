@@ -7,4 +7,23 @@
   color: var(--font-color);
   border-radius: 1rem;
   font-weight: bold;
+
+  /* * Animation (Shimering) */
+  background-image: linear-gradient(
+    -60deg,
+    transparent 0%, transparent 40%,
+    #F4EEE377 40%, #F4EEE377 60%,
+    transparent 60%, transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  /* * Animation (Shimering) */
+}
+
+.main-button:hover {
+  /* * Animation (Shimering) */
+  background-position-x: -150%;
+  transition: background-position-x 1150ms;
+  /* * Animation (Shimering) */
 }

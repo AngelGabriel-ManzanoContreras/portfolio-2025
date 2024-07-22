@@ -1,0 +1,28 @@
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon:hover .contact-icon__message {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.contact-icon:hover::after {
+  width: 100%;
+}
+
+.contact-icon__message {
+  transition: all 0.3s;
+}
+
+.contact-icon::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--purple);
+  transition: all 0.3s;
+}
