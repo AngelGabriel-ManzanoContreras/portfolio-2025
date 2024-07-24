@@ -5,7 +5,7 @@ import ExperienceCard from '@/src/components/experience-card';
 
 export default function index() {
   return (
-    <section className={ styles[`experience`] }>
+    <section className={ styles[`experience`] } id='experience'>
 
       <h2 className={ styles[`experience__title`] }>Experience</h2>
       

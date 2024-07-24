@@ -1,0 +1,21 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--page-padding);
+  gap: var(--page-gap);
+}
+
+.projects__title {
+  font-size: var(--section-title-size);
+}
+
+.projects__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--page-gap);
+}

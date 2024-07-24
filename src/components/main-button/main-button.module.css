@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-position-x: 150%;
   /* * Animation (Shimering) */
+  cursor: pointer;
 }
 
 .main-button:hover {

@@ -29,7 +29,7 @@ export default function Skills() {
   }
 
   return (
-    <section className={ styles[`skills-section`] }>
+    <section className={ styles[`skills-section`] } id='skills'>
       <h2 className={ styles[`skills-section__title`] }>Skills</h2>
 
       <section className={ styles[`skills-section__categories`] }>

@@ -16,7 +16,7 @@ export default function index() {
   }
 
   return (
-    <section className={ styles[`about`] }>
+    <section className={ styles[`about`] } id='about'>
 
       <article className={ styles[`about__article`]}>
         <h1 className={ styles[`about__title`] }>Angel Manzano</h1>
