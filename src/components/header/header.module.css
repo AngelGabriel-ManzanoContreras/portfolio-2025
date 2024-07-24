@@ -10,3 +10,39 @@
   background: var(--fragment-color);
   box-shadow: var(--container-shadow);
 }
+
+.header__navbar {
+  width: 100%;
+}
+
+.header__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header__list-item {
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__list-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--purple);
+  transition: width 0.3s;
+}
+
+.header__list-item:hover::after {
+  width: 100%;
+}
