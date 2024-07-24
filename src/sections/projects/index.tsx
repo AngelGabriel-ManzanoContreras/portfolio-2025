@@ -15,7 +15,7 @@ export default function index() {
               <ProjectCard
                 key={ index }
                 url={ project }
-                { ...projects[project].head }
+                { ...projects[project].introduction }
               />
             )
           })

@@ -2,10 +2,12 @@
 import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 
+import { IProjectCard } from './Iproject-card'
+
 import styles from './project-card.module.css'
 import MainButton from '@/src/components/main-button'
 
-export default function index({ url, title, fragment, jobrole, img }) {
+export default function index({ url, title, fragment, jobrole, img } : IProjectCard) {
   const router = useRouter()
 
   const navigate = () => {

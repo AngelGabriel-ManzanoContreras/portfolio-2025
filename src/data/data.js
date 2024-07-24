@@ -249,13 +249,13 @@ export const education = [
 
 export const projects = {
   'sites' : {
-    head : {
+    introduction : {
       title: 'Sites',
       fragment: 'Cafesito con pan',
       jobrole: 'UI Designer and Frontend Developer',
       img: littlesitesImages[0]
     },
-    problem : 'My team and I were looking to address the problem of SMEs (PyMEs) not having a website. We wanted a platform where they could create their own website with a few clicks and a little help from us. We wanted to make it easy for them to have a website and be able to manage it themselves.',
+    summary : 'My team and I were looking to address the problem of SMEs (PyMEs) not having a website. We wanted a platform where they could create their own website with a few clicks and a little help from us. We wanted to make it easy for them to have a website and be able to manage it themselves.',
     contribution: {
       description: 'As UI Designer, I had to build an intuitive and pleasant Interface where the users were able to input their information and see their Landing page. Later on, I had to correct some CSS styles to accomplish what was planned and help with the website\'s backend development. Currently, only the Landing page is available, but the rest of the website is under development.',
       workSamples: littlesitesImages,
@@ -297,13 +297,13 @@ export const projects = {
     ],
   },
   'makhai' : {
-    head: {
+    introduction: {
       title: 'Makhai',
       fragment: 'Schoolar project',
       jobrole: 'Product Owner and Fullstack Developer',
       img: makhaiImages[0]
     },
-    problem: 'My team and I were asked to build a website for a Hotel where they could show their rooms, events, and activities. Also, make Room reservations and Logistic administration possible.',
+    summary: 'My team and I were asked to build a website for a Hotel where they could show their rooms, events, and activities. Also, make Room reservations and Logistic administration possible.',
     contribution: {
       description: `As my team's Product Owner, I was responsible for structuring the Team's backlog, task relegation, and handing deliverables weekly. In addition, I was responsible for debugging and refactoring front-end code, creating the website's back-end, and deploying the website.`,
       workSamples: makhaiImages,
