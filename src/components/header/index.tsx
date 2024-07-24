@@ -8,22 +8,22 @@ export default function Header() {
       <nav className={ styles[`header__navbar`] }>
         <ul className={ styles[`header__list`] }>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#">About me</Link>
+            <Link className={ styles[`header__list-item`] } href="/#">About me</Link>
           </li>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#skills">Skills</Link>
+            <Link className={ styles[`header__list-item`] } href="/#skills">Skills</Link>
           </li>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#experience">Experience</Link>
+            <Link className={ styles[`header__list-item`] } href="/#experience">Experience</Link>
           </li>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#education">Education</Link>
+            <Link className={ styles[`header__list-item`] } href="/#education">Education</Link>
           </li>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#projects">Projects</Link>
+            <Link className={ styles[`header__list-item`] } href="/#projects">Projects</Link>
           </li>
           <li>
-            <Link className={ styles[`header__list-item`] } href="#contact">Contact</Link>
+            <Link className={ styles[`header__list-item`] } href="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>
