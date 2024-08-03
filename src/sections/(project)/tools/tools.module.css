@@ -1,0 +1,24 @@
+.project-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--page-padding);
+  background-color: var(--section-container);
+  box-shadow: var(--container-shadow);
+}
+
+.project-tools__title {
+  text-align: center;
+  font-size: var(--section-title-size);
+  margin-bottom: var(--page-gap);
+}
+
+.project-tools__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--page-gap);
+  flex-wrap: wrap;
+}
