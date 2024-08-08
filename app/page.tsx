@@ -6,16 +6,17 @@ import Experience from "@/src/sections/experience";
 import Education from "@/src/sections/education";
 import Projects from "@/src/sections/projects";
 import Contact from "@/src/sections/contact";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <article className={styles.main}>
       <About />
       <Skills />
       <Experience />
       <Education />
       <Projects />
       <Contact />
-    </main>
+    </article>
   );
 }
