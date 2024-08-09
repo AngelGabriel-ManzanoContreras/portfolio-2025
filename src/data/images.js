@@ -45,7 +45,7 @@ import makhai5 from '@/assets/imgs/projects/makhai/makhai-gestion2.jpeg'
 
 // Education images
 import ptech from '@/assets/imgs/education/ptech.webp';
-import udeg from '@/assets/imgs/education/udeg.webp';
+import udeg from '@/assets/imgs/education/udg.webp';
 import cucei from '@/assets/imgs/education/cucei.webp';
 import google_pm from '@/assets/imgs/education/google-project-management-certificate.webp';
 import google_ux from '@/assets/imgs/education/google-ux-certificate.webp';

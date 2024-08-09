@@ -19,8 +19,7 @@ export default function index({ title, duration, ubication, company, image, desc
           <Image
             src={ image }
             alt={ company }
-            width={ 150 }
-            height={ 150 }
+            fill={ true }
           />
         </figure>
 
