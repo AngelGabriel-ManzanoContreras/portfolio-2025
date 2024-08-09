@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
+import { IIntroduction } from './Iintroduction'
+
 import styles from './introduction.module.css'
 
-export default function index({ title, fragment, img, jobrole }) {
+export default function index({ title, fragment, img, jobrole } : IIntroduction) {
   return (
     <section className={ styles[`introduction`] }>
       <section className={ styles[`introduction__text`] }>
