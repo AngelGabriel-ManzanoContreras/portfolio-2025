@@ -1,4 +1,5 @@
 'use client';
+import { useRouter } from 'next/navigation';
 
 import Image from 'next/image'
 
@@ -8,11 +9,9 @@ import MainButton from '@/src/components/main-button'
 import myImage from '@/assets/imgs/angel.webp'
 
 export default function index() {
-  
+  const router = useRouter();
   const goToContact = () => {
-    let contactSection = document.getElementById('contact');
-
-    if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+    router.push('/#contact');
   }
 
   return (
