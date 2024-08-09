@@ -6,6 +6,7 @@ import { projects } from "@/src/data/data"
 import styles from "./page.module.css"
 import Introduction from "@/src/sections/(project)/introduction"
 import Summary from "@/src/sections/(project)/summary"
+import Contribution from "@/src/sections/(project)/contribution"
 import Tools from "@/src/sections/(project)/tools"
 
 export default function page() {
@@ -16,6 +17,7 @@ export default function page() {
     <article className={ styles[`project-main`] }>
       <Introduction { ...projectData.introduction } />
       <Summary summary={ projectData.summary } />
+      <Contribution { ...projectData.contribution } />
       <Tools tools={ projectData.tools } />
     </article>
   )
