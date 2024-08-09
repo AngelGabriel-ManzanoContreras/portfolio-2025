@@ -1,5 +1,5 @@
 'use client';
-import { useParams } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
 
 import { projects } from "@/src/data/data"
 
@@ -10,15 +10,21 @@ import Contribution from "@/src/sections/(project)/contribution"
 import Tools from "@/src/sections/(project)/tools"
 
 export default function page() {
-  const { project } = useParams()
+  const { project } = useParams();
+  const router = useRouter();
   const projectData = projects[ project ];
 
+  if ( !projectData ) {
+    router.push("/");
+    return null;
+  }
+
   return (
-    <article className={ styles[`project-main`] }>
+    <main className={ styles[`project-main`] }>
       <Introduction { ...projectData.introduction } />
       <Summary summary={ projectData.summary } />
       <Contribution { ...projectData.contribution } />
       <Tools tools={ projectData.tools } />
-    </article>
+    </main>
   )
 }
