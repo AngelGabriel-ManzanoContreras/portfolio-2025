@@ -46,6 +46,7 @@ import makhai5 from '@/assets/imgs/projects/makhai/makhai-gestion2.jpeg'
 // Education images
 import ptech from '@/assets/imgs/education/ptech.webp';
 import udeg from '@/assets/imgs/education/udeg.webp';
+import cucei from '@/assets/imgs/education/cucei.webp';
 import google_pm from '@/assets/imgs/education/google-project-management-certificate.webp';
 import google_ux from '@/assets/imgs/education/google-ux-certificate.webp';
 import sks_ia from '@/assets/imgs/education/skillsbuild--artificial-intelligence-fundamentals.webp';
@@ -106,6 +107,7 @@ export const externalImages = {
     ibm,
     ptech,
     udeg,
+    cucei,
     google_pm,
     google_ux,
     sks_ia,

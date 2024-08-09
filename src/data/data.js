@@ -149,6 +149,15 @@ export const experience = [
 export const education = [
   {
     title: 'Higher university technician in computer systems',
+    company: 'CUCEI - UdeG',
+    image: externalImages.cucei,
+    description: ` • Programming
+  • Web Development
+  • Networking
+  • Big Data`
+  },
+  {
+    title: 'Higher university technician in computer systems',
     company: 'PTECH - IBM - JA Worldwide',
     image: externalImages.ptech,
     description: ` • Programming
