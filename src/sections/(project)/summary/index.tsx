@@ -1,10 +1,12 @@
 import Image from "next/image"
 
+import { ISummary } from "./Isummary"
+
 import styles from "./summary.module.css"
 
 import helperImage from "@/assets/icons/project-summary.png"
 
-export default function index({ summary }) {
+export default function index({ summary } : ISummary) {
   return (
     <section className={ styles[`project-summary`] }>
       <h3 className={ styles[`project-summary__title`] }>Project Summary</h3>
