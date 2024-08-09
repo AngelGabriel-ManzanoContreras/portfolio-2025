@@ -1,7 +1,9 @@
+import { ITools } from "./Itools";
+
 import styles from"./tools.module.css";
 import Skill from "@/src/components/skill";
 
-export default function index({ tools }) {
+export default function index({ tools } : ITools) {
   return (
     <section className={ styles[`project-tools`] }>
       <h3 className={ styles[`project-tools__title`] }>Tools used</h3>
