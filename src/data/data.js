@@ -152,9 +152,9 @@ export const education = [
     company: 'CUCEI - UdeG',
     image: externalImages.cucei,
     description: ` • Programming
-  • Web Development
-  • Networking
-  • Big Data`
+ • Web Development
+ • Networking
+ • Big Data`
   },
   {
     title: 'Higher university technician in computer systems',

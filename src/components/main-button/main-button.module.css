@@ -1,6 +1,7 @@
 .main-button {
   flex: 0;
   width: fit-content;
+  max-width: 100%;
   background-color: var(--purple);
   padding: 1rem 4rem;
   font-size: var(--section-text-size);
@@ -36,4 +37,11 @@
 .main-button:active {
   transform: scale(0.95);
   transition: all 0.1s;
+}
+
+@media screen and (max-width: 570px) {
+  .main-button {
+    padding: 1rem 2rem;
+  }
+  
 }

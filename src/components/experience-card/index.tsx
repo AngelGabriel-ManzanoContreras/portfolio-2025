@@ -17,6 +17,7 @@ export default function index({ title, duration, ubication, company, image, desc
 
         <figure className={ styles[`experience-card__image`] }>
           <Image
+            className={ styles[`experience-card__inner-image`] }
             src={ image }
             alt={ company }
             fill={ true }
