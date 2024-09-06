@@ -9,7 +9,7 @@
   padding: 1rem;
   background: var(--fragment-color);
   box-shadow: var(--container-shadow);
-  z-index: 4;
+  z-index: 10;
 }
 
 .header__navbar {
@@ -46,4 +46,35 @@
 
 .header__list-item:hover::after {
   width: 100%;
+}
+
+.header__menu-icon {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+}
+
+.header__menu-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    justify-content: flex-end;
+  }
+
+  .header__navbar {
+    display: none;;
+  }
+
+  .header__menu-icon {
+    display: block;
+  }
 }

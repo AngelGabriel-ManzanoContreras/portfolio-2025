@@ -1,10 +1,28 @@
+'use client';
+
+import { useState } from "react";
+
+import Image from "next/image";
 import Link from "next/link";
+
 import styles from "./header.module.css";
+import menuIcon from "../../../assets/icons/menu.webp";
+import xIcon from "../../../assets/icons/x.webp";
+
+import Navbar from "../navbar";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <header className={ styles[`header`] }>
-      {/* <h1>Angel Manzano</h1> */}
+      
+      <button className={ styles[`header__menu-icon`] }>
+        <Image src={ menuOpen ? xIcon : menuIcon } alt="Menu icon" fill={true} onClick={ handleMenu } />
+      </button>
+
       <nav className={ styles[`header__navbar`] }>
         <ul className={ styles[`header__list`] }>
           <li>
@@ -27,6 +45,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+
+      <Navbar menuOpen={ menuOpen } closeMenu={ handleMenu } />
+
     </header>
   )
 }
