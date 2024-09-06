@@ -10,9 +10,15 @@ import MainButton from '@/src/components/main-button';
 
 export default function index({ title, duration, ubication, company, image, description, badge } : IExperienceCard) {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const cardStyle = !isLargeScreen ? { cursor: 'pointer' } : {};
 
   const goToCertificate = () => {
     window.open(badge, '_blank');
+  }
+
+  const onCardClick = (event) => {
+    const details = event.currentTarget.querySelector('details');
+    details.open = !details.open;
   }
 
   useEffect(() => {
@@ -25,7 +31,7 @@ export default function index({ title, duration, ubication, company, image, desc
   }, []);
 
   return (
-    <article className={ styles['experience-card'] }>
+    <article className={ styles[`experience-card`] } style={ cardStyle } onClick={ !isLargeScreen && onCardClick }>
       <section className={ styles['experience-card__header'] }>
 
         <figure className={ styles['experience-card__image'] }>
@@ -46,7 +52,7 @@ export default function index({ title, duration, ubication, company, image, desc
 
       </section>
 
-      <details className={styles[`experience-card__details`]} open={isLargeScreen}>
+      <details className={styles[`experience-card__details`]} open={isLargeScreen} onClick={ onCardClick }>
         <summary className={styles[`experience-card__summary-title`]}>
           <h4 className={styles[`experience-card__description-title`]}>Description</h4>
         </summary>

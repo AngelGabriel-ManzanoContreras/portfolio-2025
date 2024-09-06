@@ -9,7 +9,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: 1rem;
   background-color: var(--container-color);
 }
 
@@ -63,4 +63,19 @@
 
 .experience-card__details[open] .experience-card__summary-title {
   margin-top: .25rem;
+}
+
+.experience-card__pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 579px) {
+  .experience-card__header {
+    flex-direction: column;
+  }
+
+  .experience-card__image {
+    width: 100%;
+    height: 15rem;
+  }
 }
