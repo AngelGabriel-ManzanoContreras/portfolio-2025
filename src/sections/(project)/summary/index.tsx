@@ -18,9 +18,7 @@ export default function index({ summary } : ISummary) {
           <Image 
             src={ helperImage }
             alt="Project Summary"
-            
-            height={ 250 }
-            width={ 250 }
+            fill={ true }
           />
         </figure>
 
