@@ -26,13 +26,43 @@
 
 .about__image {
   position: relative;
-  width: 50%;
+  width: 35dvw;
+  height: 35dvw;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 
 .about__image img {
   border-radius: 50px;
   z-index: -1;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about__image {
+    width: 50dvw;
+    height: 50dvw;
+    order: 1;
+  }
+
+  .about__article {
+    order: 2;
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .about__image {
+    width: 70dvw;
+    height: 70dvw;
+  }
+  
 }

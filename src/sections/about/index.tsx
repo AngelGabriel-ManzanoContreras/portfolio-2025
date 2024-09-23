@@ -24,7 +24,7 @@ export default function index() {
       </article>
       
       <figure className={ styles[`about__image`] }>
-        <Image  src={myImage} alt="Angel Manzano" height={524} width={524} />
+        <Image  src={myImage} alt="Angel Manzano" fill={true} />
       </figure>
 
     </section>
