@@ -13,7 +13,7 @@ export default function index({ menuOpen, closeMenu } : INavbar) {
   return (
     <nav className={ `${ styles[`navbar`] } ${ menuOpen && styles[`navbar--show-up`] }` }>
       <ul className={ styles[`navbar__list`] }>
-        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#home" onClick={ closeMenu } text="Home" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#about" onClick={ closeMenu } text="Home" />
         <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#skills" onClick={ closeMenu } text="Skills" />
         <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#experience" onClick={ closeMenu } text="Experience" />
         <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#education" onClick={ closeMenu } text="Education" />
