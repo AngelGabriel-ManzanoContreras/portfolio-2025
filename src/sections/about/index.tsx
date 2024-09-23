@@ -14,12 +14,17 @@ export default function index() {
     router.push('/#contact');
   }
 
+  const paragraph = `Frontend Developer | UX/UI Designer | P-TECH (IBM) - 2nd Generation
+  
+  I am a Software Developer with experience in UX/UI Design, passionate about creating digital experiences that are both visually appealing and user-friendly. I am always looking for new challenges and opportunities to grow professionally.
+  `;
+
   return (
     <section className={ styles[`about`] } id='about'>
 
       <article className={ styles[`about__article`]}>
         <h1 className={ styles[`about__title`] }>Angel Manzano</h1>
-        <p className={ styles[`about__description`] }>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <pre className={ styles[`about__description`] }>{ paragraph }</pre>
         <MainButton text="Contact me" onClick={ goToContact } />
       </article>
       
