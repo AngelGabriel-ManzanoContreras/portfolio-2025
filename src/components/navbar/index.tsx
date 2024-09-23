@@ -1,44 +1,24 @@
 'use client';
-import { useEffect } from 'react'
 
-import Link from 'next/link'
+import { INavbar } from './Inavbar';
+import useNavbar from './useNavbar';
+
+import NavbarItem from '../navbar-item';
 
 import styles from './navbar.module.css'
 
-export default function index({ menuOpen, closeMenu }) {
-  useEffect(() => {
-    if ( menuOpen ) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [menuOpen]);
+export default function index({ menuOpen, closeMenu } : INavbar) {
+  useNavbar( menuOpen );
 
   return (
     <nav className={ `${ styles[`navbar`] } ${ menuOpen && styles[`navbar--show-up`] }` }>
       <ul className={ styles[`navbar__list`] }>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#" onClick={ closeMenu }>About me</Link>
-        </li>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#skills" onClick={ closeMenu }>Skills</Link>
-        </li>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#experience" onClick={ closeMenu }>Experience</Link>
-        </li>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#education" onClick={ closeMenu }>Education</Link>
-        </li>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#projects" onClick={ closeMenu }>Projects</Link>
-        </li>
-        <li>
-          <Link className={ styles[`navbar__list-item`] } href="/#contact" onClick={ closeMenu }>Contact</Link>
-        </li>
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#home" onClick={ closeMenu } text="Home" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#skills" onClick={ closeMenu } text="Skills" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#experience" onClick={ closeMenu } text="Experience" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#education" onClick={ closeMenu } text="Education" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#projects" onClick={ closeMenu } text="Projects" />
+        <NavbarItem customClassName={ styles[`navbar__list-item`] } href="/#contact" onClick={ closeMenu } text="Contact" />
       </ul>
     </nav>
   )

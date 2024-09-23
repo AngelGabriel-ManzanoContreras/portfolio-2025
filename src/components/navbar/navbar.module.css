@@ -12,7 +12,7 @@
 }
 
 .navbar--show-up {
-  animation: fadeIn 1.5s forwards;
+  animation: fadeIn 1.125s forwards;
 }
 
 .navbar__list {
