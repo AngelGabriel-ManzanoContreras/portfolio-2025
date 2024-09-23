@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function useExperienceCard( badge: string ) {
+export default function useExperienceCard( badge: string | undefined ) {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const cardStyle = !isLargeScreen ? { cursor: 'pointer' } : {};
 
@@ -11,7 +11,7 @@ export default function useExperienceCard( badge: string ) {
   const onCardClick = (event: React.MouseEvent<HTMLElement>) => {
     const details = event.currentTarget.querySelector('details');
     if (!details) return;
-    if (!details.hasAttribute('open')) details.setAttribute('open', true);
+    if (!details.hasAttribute('open')) details.setAttribute('open', 'true');
     else details.open = !details.open;
   }
 

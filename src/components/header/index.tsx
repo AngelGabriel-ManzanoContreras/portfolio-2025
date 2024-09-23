@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className={ styles[`header`] }>
       
-      <button className={ styles[`header__menu-icon`] }>
+      <button className={ styles[`header__menu-icon`] } title="Toggle menu">
         <Image src={ menuOpen ? xIcon : menuIcon } alt="Menu icon" fill={true} onClick={ handleMenu } />
       </button>
 

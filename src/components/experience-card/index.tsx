@@ -11,7 +11,7 @@ export default function index({ title, duration, ubication, company, image, desc
   const { isLargeScreen, cardStyle, goToCertificate, onCardClick } = useExperienceCard( badge );
 
   return (
-    <article className={ styles[`experience-card`] } style={ cardStyle } onClick={ !isLargeScreen && onCardClick }>
+    <article className={ styles[`experience-card`] } style={ cardStyle } onClick={ !isLargeScreen ? onCardClick : () => {} }>
       <section className={ styles['experience-card__header'] }>
 
         <figure className={ styles['experience-card__image'] }>

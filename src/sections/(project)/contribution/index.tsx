@@ -40,6 +40,7 @@ export default function index({ description, workSamples, url, uxcase } : IContr
                 key={ index }
                 className={ `${ styles[`contribution__dash`] } ${ currentSample === index ? styles[`contribution__dash--active`] : ''}` }
                 onClick={ () => handleClick( index ) }
+                title={`Work sample ${index + 1}`}
               ></button>
             ))
           }
