@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Angel Gabriel Manzano Contreras' Porfolio
 
-## Getting Started
+#### Frontend Developer | UX/UI Designer | P-TECH (IBM) - 2nd Generation
 
-First, run the development server:
+In 2022, I had the opportunity to participate in Codellege (Softteck), where I delved into innovative approaches for envisioning, strategizing, and fostering collaborative environments.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+My journey toward professional growth began in 2021 when I joined the P-TECH IBM program. Here, I've actively dedicated myself to enhancing both my technical prowess and soft skills. Through mentorship, collaborative project development, and coursework at SkillsBuild, I continuously strive to expand my knowledge and abilities.
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is a new version of my portfolio, now developed using Next.js (instead of React.js and Vite as old ones).
+```

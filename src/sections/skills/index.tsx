@@ -33,14 +33,14 @@ export default function Skills() {
       <h2 className={ styles[`skills-section__title`] }>Skills</h2>
 
       <section className={ styles[`skills-section__categories`] }>
-        <span 
+        <button 
           className={ categoryStyleHandler('technical') }
           onClick={ () => handleCategory('technical') }
-          >Technical</span>
-        <span 
+          >Technical</button>
+        <button 
           className={ categoryStyleHandler('professional') }
           onClick={ () => handleCategory('professional') }
-          >Professional</span>
+          >Professional</button>
       </section>
 
       <section className={ styles[`skills-section__skill-list`] }>

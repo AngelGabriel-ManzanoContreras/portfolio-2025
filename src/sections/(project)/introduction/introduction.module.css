@@ -87,3 +87,44 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .introduction__text {
+    width: 100%;
+  }
+
+  .introduction__cover {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .introduction__shape {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduction__long-shape {
+    width: 100%;
+    height: 25%;
+  }
+
+  .introduction__short-shape {
+    width: 100%;
+    height: 25%;
+    border-radius: 12dvh 0 0 0;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .introduction__short-shape::before {
+    box-shadow: -5px 0 0 12dvh var(--background-color);
+    border-radius: 12dvh 0 0 0;
+  }
+}

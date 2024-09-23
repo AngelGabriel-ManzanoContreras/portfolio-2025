@@ -1,4 +1,5 @@
 'use client';
+import { useRouter } from 'next/navigation';
 
 import Image from 'next/image'
 
@@ -8,24 +9,27 @@ import MainButton from '@/src/components/main-button'
 import myImage from '@/assets/imgs/angel.webp'
 
 export default function index() {
-  
+  const router = useRouter();
   const goToContact = () => {
-    let contactSection = document.getElementById('contact');
-
-    if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+    router.push('/#contact');
   }
+
+  const paragraph = `Frontend Developer | UX/UI Designer | P-TECH (IBM) - 2nd Generation
+  
+  I am a Software Developer with experience in UX/UI Design, passionate about creating digital experiences that are both visually appealing and user-friendly. I am always looking for new challenges and opportunities to grow professionally.
+  `;
 
   return (
     <section className={ styles[`about`] } id='about'>
 
       <article className={ styles[`about__article`]}>
         <h1 className={ styles[`about__title`] }>Angel Manzano</h1>
-        <p className={ styles[`about__description`] }>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <pre className={ styles[`about__description`] }>{ paragraph }</pre>
         <MainButton text="Contact me" onClick={ goToContact } />
       </article>
-
+      
       <figure className={ styles[`about__image`] }>
-        <Image  src={myImage} alt="Angel Manzano" height={524} width={524} />
+        <Image  src={myImage} alt="Angel Manzano" fill={true} />
       </figure>
 
     </section>

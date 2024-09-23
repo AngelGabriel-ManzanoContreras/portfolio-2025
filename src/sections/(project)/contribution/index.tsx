@@ -1,23 +1,15 @@
-'use client';
-import { useState } from "react";
-
 import Image from "next/image"
+
+import { IContribution } from "./Icontribution"
+import useContribution from "./useContribution";
 
 import styles from "./contribution.module.css"
 import MainButton from "@/src/components/main-button"
 
-export default function index({ description, workSamples, url, uxcase }) {
-  const [ currentSample, setCurrentSample ] = useState(0);
-  const [ currentPosition, setCurrentPosition ] = useState({ transform : `translateX(0)`, transition : `transform ${ currentSample * .75 }s ease-in-out` });
-
-  const viewMore = ( place ) => {
-    window.open(place, `_blank`);
-  }
-
-  const handleClick = ( nextSample : number ) => {
-    setCurrentSample(nextSample);
-    setCurrentPosition({ transform : `translateX(-${ nextSample * 100 }%)`, transition : `transform ${ Math.abs( nextSample - currentSample ) * .75 }s ease-in-out` });
-  }
+export default function index({ description, workSamples, url, uxcase } : IContribution) {
+  const { currentSample, currentPosition, viewMore, handleClick } = useContribution();
+  const viewProject = () => viewMore(url as string);
+  const viewUxCase = () => viewMore(uxcase as string);
 
   return (
     <section className={ styles[`contribution`] }>
@@ -48,6 +40,7 @@ export default function index({ description, workSamples, url, uxcase }) {
                 key={ index }
                 className={ `${ styles[`contribution__dash`] } ${ currentSample === index ? styles[`contribution__dash--active`] : ''}` }
                 onClick={ () => handleClick( index ) }
+                title={`Work sample ${index + 1}`}
               ></button>
             ))
           }
@@ -57,14 +50,14 @@ export default function index({ description, workSamples, url, uxcase }) {
           {
             url &&
             <MainButton
-              onClick={ () => viewMore( url ) }
+              onClick={ viewProject }
               text={ `View project` }
             />
           }
           {
             uxcase &&
             <MainButton
-              onClick={ () => viewMore( uxcase ) }
+              onClick={ viewUxCase }
               text={ `View UX case` }
             />
           }

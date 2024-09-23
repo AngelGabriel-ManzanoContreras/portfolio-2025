@@ -10,8 +10,19 @@
 }
 
 .skill__icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
 
 .skill__title {
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .skill__icon {
+    max-width: 75px;
+    width: 75px;
+    height: 75px;
+  }
 }

@@ -47,13 +47,18 @@ import makhai5 from '@/assets/imgs/projects/makhai/makhai-gestion2.jpeg'
 import ptech from '@/assets/imgs/education/ptech.webp';
 import udeg from '@/assets/imgs/education/udg.webp';
 import cucei from '@/assets/imgs/education/cucei.webp';
+
 import google_pm from '@/assets/imgs/education/google-project-management-certificate.webp';
 import google_ux from '@/assets/imgs/education/google-ux-certificate.webp';
+
+import ibm_devops_essentials from '@/assets/imgs/education/devops-essentials.webp';
+
 import sks_ia from '@/assets/imgs/education/skillsbuild--artificial-intelligence-fundamentals.webp';
 import designThinkingPractitioner from '@/assets/imgs/education/design-thinking-practitioner.webp';
 import sks_agile from '@/assets/imgs/education/ibm-agile-explorer.webp';
 import oreilly_git from '@/assets/imgs/education/oreilly-git-essentials.webp';
 import sks_workingInADigitalWorld from '@/assets/imgs/education/working-in-a-digital_world--professional-skills.webp';
+
 import ccna_itn from '@/assets/imgs/education/ccna-itn-1.webp';
 import cv_icon from '@/assets/icons/cv-icon.webp';
 
@@ -110,6 +115,7 @@ export const externalImages = {
     cucei,
     google_pm,
     google_ux,
+    ibm_devops_essentials,
     sks_ia,
     designThinkingPractitioner,
     ccna_itn,
