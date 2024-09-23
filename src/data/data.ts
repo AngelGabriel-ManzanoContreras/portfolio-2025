@@ -1,3 +1,5 @@
+import { Projects } from '../../src/data/types.js'
+
 import { icons, makhaiImages, littlesitesImages, externalImages } from './images.js'
 
 export const profiles = [
@@ -266,7 +268,7 @@ export const education = [
   }
 ]
 
-export const projects = {
+export const projects: Projects = {
   'sites' : {
     introduction : {
       title: 'Sites',

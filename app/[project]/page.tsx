@@ -8,11 +8,13 @@ import Introduction from "@/src/sections/(project)/introduction"
 import Summary from "@/src/sections/(project)/summary"
 import Contribution from "@/src/sections/(project)/contribution"
 import Tools from "@/src/sections/(project)/tools"
+import { ITool } from "@/src/sections/(project)/tools/Itools";
 
 export default function page() {
   const { project } = useParams();
   const router = useRouter();
-  const projectData = projects[ project ];
+  const projectKey: string = Array.isArray(project) ? project[0] : project;
+  const projectData = projects[ projectKey ];
 
   if ( !projectData ) {
     router.push("/");
@@ -24,7 +26,7 @@ export default function page() {
       <Introduction { ...projectData.introduction } />
       <Summary summary={ projectData.summary } />
       <Contribution { ...projectData.contribution } />
-      <Tools tools={ projectData.tools } />
+      <Tools tools={ projectData.tools as ITool[] } />
     </main>
   )
 }
