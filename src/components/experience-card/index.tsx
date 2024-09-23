@@ -1,34 +1,14 @@
 'use client';
 import Image from 'next/image';
 
-import { useState, useEffect } from 'react';
-
+import useExperienceCard from './useExperienceCard';
 import { IExperienceCard } from './Iexperience-card';
 
 import styles from './experience.module.css';
 import MainButton from '@/src/components/main-button';
 
 export default function index({ title, duration, ubication, company, image, description, badge } : IExperienceCard) {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-  const cardStyle = !isLargeScreen ? { cursor: 'pointer' } : {};
-
-  const goToCertificate = () => {
-    window.open(badge, '_blank');
-  }
-
-  const onCardClick = (event) => {
-    const details = event.currentTarget.querySelector('details');
-    details.open = !details.open;
-  }
-
-  useEffect(() => {
-    const checkScreenSize = () => setIsLargeScreen(window.innerWidth > 579);
-    
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+  const { isLargeScreen, cardStyle, goToCertificate, onCardClick } = useExperienceCard( badge );
 
   return (
     <article className={ styles[`experience-card`] } style={ cardStyle } onClick={ !isLargeScreen && onCardClick }>
