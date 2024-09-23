@@ -177,6 +177,7 @@ export const education = [
   {
     title: 'Google Professional Certificate Project Management',
     company: 'Google - Coursera',
+    badge: 'https://www.coursera.org/account/accomplishments/professional-cert/DRG3IA2G73U4',
     current: true,
     image: externalImages.google_pm,
     description: ` • Project Management
@@ -193,6 +194,15 @@ export const education = [
  • User Research
  • User-centered Design
  • User Interface Design`
+  },
+  {
+    title: 'DevOps Essentials',
+    company: 'IBM - Coursera',
+    badge: 'https://www.credly.com/badges/3fa0a9fe-e57f-4eb8-abb2-7158efc290a0/public_url',
+    image: externalImages.ibm_devops_essentials,
+    description: ` • DevOps
+ • Continuous Integration
+ • Continuous Delivery`
   },
   {
     title: 'Git Essentials',
