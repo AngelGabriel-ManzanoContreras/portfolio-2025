@@ -16,7 +16,7 @@ export default function index() {
 
   const paragraph = `Frontend Developer | UX/UI Designer | P-TECH (IBM) - 2nd Generation
   
-  I am a Software Developer with experience in UX/UI Design, passionate about creating digital experiences that are both visually appealing and user-friendly. I am always looking for new challenges and opportunities to grow professionally.
+  Software Developer with experience in UX/UI Design, passionate about creating digital experiences that are both visually appealing and user-friendly. I am always looking for new challenges and opportunities to grow professionally.
   `;
 
   return (
